@@ -17,7 +17,6 @@ input {
     }
     focus-follows-mouse max-scroll-amount="0%"
 }
-//spawn-at-startup "swaybg" "-m" "fill" "-i" "~/Pictures/wallpapers/Bonsai-Plant.png"
 
 /-layer-rule {
     match namespace="^wallpaper$"
@@ -63,7 +62,7 @@ layout {
 
     border {
         width 2
-        active-gradient from="#0DB7D4" to="#9778D0" angle=90
+        active-gradient from="#8ec07c" to="#cc241d" angle=90
         inactive-color "#04404A"
     }
 }
@@ -72,8 +71,9 @@ spawn-at-startup "/usr/lib/mate-polkit/polkit-mate-authentication-agent-1"
 spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "waypaper" "--restore"
-spawn-at-startup "mako"
+//spawn-at-startup "mako"
 spawn-at-startup "swayidle" "-w" "timeout" "601" "niri msg action power-off-monitors" "timeout" "600" "swaylock -f" "before-sleep" "swaylock -f"
+spawn-at-startup "gammastep"
 
 environment {
     DISPLAY ":0"
